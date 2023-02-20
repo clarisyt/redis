@@ -27,6 +27,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+
+/*
+ * redis server 端主程序
+ * main 函数为程序入口
+ */
+
 #include "server.h"
 #include "monotonic.h"
 #include "cluster.h"
@@ -6933,6 +6939,9 @@ redisTestProc *getTestProcByName(const char *name) {
 }
 #endif
 
+/*
+ *
+ */
 int main(int argc, char **argv) {
     struct timeval tv;
     int j;

@@ -2492,6 +2492,9 @@ void makeThreadKillable(void) {
     pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
 }
 
+/*
+ *  redis启动入口
+ */
 void initServer(void) {
     int j;
 
